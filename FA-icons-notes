@@ -1,0 +1,19 @@
+prefix unicode with '&#' in HTML and '\' in css
+
+Phone -
+Home - f015, <i class="fas fa-home"></i>
+Wrench -f0ad, <i class="fas fa-wrench"></i>
+Cogs -f085, <i class="fas fa-cogs"></i>
+
+Facebook - f39e, <i class="fab fa-facebook-f"></i>
+Twitter - f099, <i class="fab fa-twitter"></i>
+linkedIn - f0e1, <i class="fab fa-linkedin-in"></i>
+google+ - f2b3, <i class="fab fa-google-plus"></i>
+
+
+Additional- if needed.
+
+chevron-right - f054, <i class="fas fa-chevron-right"></i>
+chevron-left - f053, <i class="fas fa-chevron-left"></i>
+quote-left - f10d, <i class="fas fa-quote-left"></i>
+quote-right - f10e, <i class="fas fa-quote-right"></i>
