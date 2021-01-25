@@ -1,2 +1,73 @@
 //Import Colour and Font
 @import '_variables';
+
+
+body {
+    margin: 0;
+    header {
+        .header {
+            max-width: 1200px;
+            height: 60px;
+            margin: 0 auto;
+            //border: red 1px solid;
+            display: flex;
+            .logo {
+                float: left;
+                width: 30%;
+                align-self: center;
+                a {
+                    img {
+                        width: 200px;
+                    }
+                }
+            }
+            .menu {
+                float: left;
+                width: 70%;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                .button {
+                    line-height: 60px;
+                    align-self: center;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: $black;
+                }
+                .phone-button {
+                    background-color: $orange;
+                    padding-left: 5px;
+                    padding-right: 10px;
+                    height: 35px;
+                    border-radius: 2px;
+                    align-self: center;
+                    a {
+                        text-decoration: none;
+                        color: $black;
+                        display: flex;
+                        flex-wrap: nowrap;
+                        height: 100%;
+                        .mobile-icon {
+                            margin: auto;
+                            // padding: 0 10px;
+                            background-color: white;
+                            border-radius: 50%;
+                            height: 30px;
+                            width: 30px;
+                            text-align: center;
+                            line-height: 32px;
+                            color: $orange;
+
+                        }
+                        p {
+                            margin: auto;
+                            padding-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}

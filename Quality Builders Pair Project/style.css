@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+body header .header {
+  max-width: 1200px;
+  height: 60px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header .header .logo {
+  float: left;
+  width: 30%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+body header .header .logo a img {
+  width: 200px;
+}
+
+body header .header .menu {
+  float: left;
+  width: 70%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header .header .menu .button {
+  line-height: 60px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #101721;
+}
+
+body header .header .menu .phone-button {
+  background-color: #f89323;
+  padding-left: 5px;
+  padding-right: 10px;
+  height: 35px;
+  border-radius: 2px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+body header .header .menu .phone-button a {
+  text-decoration: none;
+  color: #101721;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 100%;
+}
+
+body header .header .menu .phone-button a .mobile-icon {
+  margin: auto;
+  background-color: white;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  line-height: 32px;
+  color: #f89323;
+}
+
+body header .header .menu .phone-button a p {
+  margin: auto;
+  padding-left: 10px;
+}
+/*# sourceMappingURL=style.css.map */
