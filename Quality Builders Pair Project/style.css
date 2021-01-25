@@ -61,6 +61,10 @@ body header .header .menu .phone-button {
       align-self: center;
 }
 
+body header .header .menu .phone-button:hover {
+  background-color: #e17a07;
+}
+
 body header .header .menu .phone-button a {
   text-decoration: none;
   color: #101721;
