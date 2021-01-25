@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/26a1f25226.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="/style.css">
     <title>Quality Builders</title>
 </head>
@@ -18,11 +20,21 @@
                 <img src="/Assets/logo.png" alt="Quality Builders Logo">
             </a>
         </div>
-        <div class="menu">
-            <a class="button" href="">About Us</a>
-            <a class="button" href="">Services</a>
-            <a class="button" href="">Testimonials</a>
-            <a class="button" href="">Contact Us</a>
+
+        <div class="navigation">
+
+            <ul class="menu">
+                <li><a href="">About Us</a></li>
+                <li class="dropdown"><a href="">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">Construction</a></li>
+                        <li><a href="">Architecture</a></li>
+                        <li><a href="">Installation</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Testimonials</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
             <div class="phone-button">
                 <a href="tel:01234567890">
                     <div class="mobile-icon">
@@ -31,24 +43,39 @@
                     <p>01234 567890</p>
                 </a>
             </div>
-            <!-- <a class="phone-button" href="tel:01234567890">
-                <div class="mobile-icon">
-                    <i class="fas fa-phone-alt"></i>
-                </div>
-                <p>01234 567890</p>
-            </a> -->
         </div>
     </div>
 </header>
 
+<!-- Banner Content -->
+
+<div class="slides">
+    <div>Slide 1</div>
+    <div>Slide 2</div>
+    <div>Slide 3</div>
+</div>
+
+<!-- Main Element -->
+
+<main>
 
 
 
 
+</main>
+
+<script src="slick/slick.min.js"></script>
+<script>
+    $('.slides').slick({
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        arrows: true,
 
 
+    });
+</script>
 
 
-    
 </body>
 </html>

@@ -28,30 +28,81 @@ body header .header .logo a img {
   width: 200px;
 }
 
-body header .header .menu {
+body header .header .navigation {
   float: left;
   width: 70%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body header .header .navigation .menu {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+  margin-right: 70px;
 }
 
-body header .header .menu .button {
+body header .header .navigation .menu li {
+  min-width: 120px;
+  height: 60px;
   line-height: 60px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  display: block;
+}
+
+body header .header .navigation .menu li a {
   text-decoration: none;
-  text-transform: uppercase;
   color: #101721;
 }
 
-body header .header .menu .phone-button {
-  background-color: #f89323;
+body header .header .navigation .menu .dropdown {
+  float: left;
+}
+
+body header .header .navigation .menu .dropdown .dropdown-menu {
+  z-index: 1000;
+  display: none;
+  font-size: 1rem;
+  padding: 5px 0;
+  background-color: #f69e2a;
+}
+
+body header .header .navigation .menu .dropdown .dropdown-menu li {
+  line-height: normal;
+  font-size: 14px;
+  padding: 5px 0;
+  height: auto;
+}
+
+body header .header .navigation .menu .dropdown .dropdown-menu li a {
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+body header .header .navigation .menu .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+body header .header .navigation .phone-button {
+  background-color: #f69e2a;
   padding-left: 5px;
   padding-right: 10px;
   height: 35px;
@@ -61,11 +112,11 @@ body header .header .menu .phone-button {
       align-self: center;
 }
 
-body header .header .menu .phone-button:hover {
-  background-color: #e17a07;
+body header .header .navigation .phone-button:hover {
+  background-color: #e3850a;
 }
 
-body header .header .menu .phone-button a {
+body header .header .navigation .phone-button a {
   text-decoration: none;
   color: #101721;
   display: -webkit-box;
@@ -76,7 +127,7 @@ body header .header .menu .phone-button a {
   height: 100%;
 }
 
-body header .header .menu .phone-button a .mobile-icon {
+body header .header .navigation .phone-button a .mobile-icon {
   margin: auto;
   background-color: white;
   border-radius: 50%;
@@ -84,11 +135,16 @@ body header .header .menu .phone-button a .mobile-icon {
   width: 30px;
   text-align: center;
   line-height: 32px;
-  color: #f89323;
+  color: #f69e2a;
 }
 
-body header .header .menu .phone-button a p {
+body header .header .navigation .phone-button a p {
   margin: auto;
   padding-left: 10px;
+}
+
+body main {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */

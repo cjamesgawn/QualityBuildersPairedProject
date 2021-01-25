@@ -7,9 +7,8 @@ body {
     header {
         .header {
             max-width: 1200px;
-            height: 60px;
+            height:60px;
             margin: 0 auto;
-            //border: red 1px solid;
             display: flex;
             .logo {
                 float: left;
@@ -21,18 +20,63 @@ body {
                     }
                 }
             }
-            .menu {
+            .navigation {
                 float: left;
                 width: 70%;
                 height: 100%;
                 display: flex;
-                justify-content: space-between;
-                .button {
-                    line-height: 60px;
-                    align-self: center;
-                    text-decoration: none;
+                justify-content: flex-end;
+
+                .menu {
+                    width: 70%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    list-style-type: none;
+                    padding: 0;
                     text-transform: uppercase;
-                    color: $black;
+                    font-weight: 500;
+                    margin: 0;
+                    margin-right: 70px;
+                    
+                    li {
+                        min-width: 120px;
+                        height:60px;
+                        line-height: 60px;
+                        a {
+                            text-decoration: none;
+                            color: $black;
+                        }
+                        display: block;
+                    }
+
+                    .dropdown {
+                        float: left;
+                        .dropdown-menu {
+                            z-index: 1000;
+                            display: none;
+                            font-size: 1rem;
+                            padding: 5px 0;
+                            background-color: $orange;                            
+
+                            li {
+                                line-height:normal;
+                                font-size: 14px;
+                                padding: 5px 0;
+                                height:auto;
+                                a {
+                                    margin: auto;
+                                    display:block;
+                                    text-align:center;
+                                }
+                            }
+                        }
+                        &:hover {
+                            .dropdown-menu {
+                                display: block;
+                            }
+                        }
+                    }
                 }
                 .phone-button {
                     background-color: $orange;
@@ -52,7 +96,6 @@ body {
                         height: 100%;
                         .mobile-icon {
                             margin: auto;
-                            // padding: 0 10px;
                             background-color: white;
                             border-radius: 50%;
                             height: 30px;
@@ -70,6 +113,11 @@ body {
                 }
             }
         }
+    }
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
 
