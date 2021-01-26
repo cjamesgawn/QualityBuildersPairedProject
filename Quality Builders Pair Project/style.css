@@ -25,7 +25,7 @@ body header .header .logo {
 }
 
 body header .header .logo a img {
-  width: 200px;
+  width: 220px;
 }
 
 body header .header .navigation {
@@ -143,8 +143,158 @@ body header .header .navigation .phone-button a p {
   padding-left: 10px;
 }
 
+body .slides {
+  height: 120px;
+  background-color: #f69e2a;
+}
+
 body main {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+body footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body footer .getInTouch {
+  background-color: #101721;
+}
+
+body footer .getInTouch .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body footer .getInTouch .container .text {
+  width: 60%;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+  margin: auto 0;
+}
+
+body footer .getInTouch .container .button {
+  width: 30%;
+  padding: 20px 0;
+}
+
+body footer .getInTouch .container .button a {
+  display: block;
+  text-decoration: none;
+  background-color: #fff;
+  border: 3px solid #f69e2a;
+  border-radius: 7px;
+  padding: 20px 30px;
+  font-size: 28px;
+  text-align: center;
+  color: #101721;
+  font-weight: 700;
+}
+
+body footer .footerContent {
+  background-color: #f69e2a;
+}
+
+body footer .footerContent .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body footer .footerContent .container .Contact-Us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body footer .footerContent .container .Contact-Us p {
+  color: #101721;
+  margin: 5px 0;
+  font-weight: 500;
+}
+
+body footer .footerContent .container .Contact-Us p a {
+  text-decoration: none;
+  color: #101721;
+}
+
+body footer .footerContent .container .Sections ul {
+  padding: 0;
+}
+
+body footer .footerContent .container .Sections ul li {
+  list-style: none;
+  padding: 3px 0;
+}
+
+body footer .footerContent .container .Sections ul li i {
+  padding-right: 10px;
+  color: #fff;
+  font-size: 12px;
+}
+
+body footer .footerContent .container .Sections ul li a {
+  text-decoration: none;
+  color: #101721;
+  font-weight: 500;
+}
+
+body footer .footerContent .container .Follow-Us .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 70%;
+}
+
+body footer .footerContent .container .Follow-Us .socials a {
+  width: 50%;
+  min-height: 30px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #101721;
+}
+
+body footer .footerContent .container .Follow-Us .socials a i {
+  color: #fff;
+  font-size: 22px;
+  padding-right: 10px;
+}
+
+body footer .footerContent .container .Follow-Us .socials .facebook i {
+  padding-right: 18px;
+}
+
+body footer .footerContent .container .Follow-Us .socials .linkedIn i {
+  font-size: 26px;
+  padding-right: 17px;
+}
+
+body footer .footerContent .container .Follow-Us .socials .googlePlus i {
+  font-size: 30px !important;
 }
 /*# sourceMappingURL=style.css.map */
