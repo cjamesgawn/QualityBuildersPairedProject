@@ -16,7 +16,7 @@ body {
                 align-self: center;
                 a {
                     img {
-                        width: 200px;
+                        width: 220px;
                     }
                 }
             }
@@ -115,9 +115,134 @@ body {
         }
     }
 
+    .slides {
+        height: 120px;
+        background-color: $orange;
+    }
+
     main {
         max-width: 1200px;
         margin: 0 auto;
+    }
+
+    footer {
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .getInTouch {
+            background-color: $black;
+            .container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .text {
+                    width: 60%;
+                    color: #fff;
+                    font-size: 22px;
+                    font-weight: 300;
+                    margin: auto 0;
+                }
+                .button {
+                    width: 30%;
+                    padding: 20px 0;
+                    a {
+                        display: block;
+                        text-decoration: none;
+                        background-color: #fff;
+                        border: 3px solid $orange;
+                        border-radius: 7px;
+                        padding: 20px 30px;
+                        font-size: 28px;
+                        text-align: center;
+                        color: $black;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+
+        .footerContent {
+            background-color: $orange;
+            .container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .Contact-Us {
+                    display: flex;
+                    flex-direction: column;
+                    p {
+                        color: $black;
+                        margin: 5px 0;
+                        font-weight: 500;
+                        a {
+                            text-decoration: none;
+                            color: $black;
+                        }
+                    }
+                }
+
+                .Sections {
+
+                    ul {
+                        padding: 0;
+                        li {
+                            list-style: none;
+                            padding: 3px 0;
+                            i{
+                                padding-right: 10px;
+                                color: #fff;
+                                font-size: 12px;
+                            }
+                            a {
+                                text-decoration: none;
+                                color: $black;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+
+                .Follow-Us {
+                    .socials {
+                        display: flex;
+                        flex-flow: row wrap;
+                        width: 70%;
+                        a {
+                            width: 50%;
+                            min-height: 30px;
+                            line-height: 30px;
+                            text-decoration: none;
+                            color: $black;
+                            i {
+                                color: #fff;
+                                font-size: 22px;
+                                padding-right: 10px;
+                                
+                            }
+                        }
+                        .facebook {
+                            i {
+                                padding-right: 18px;
+                            }
+                        }
+                        .linkedIn{
+                            i {
+                                font-size: 26px;
+                                padding-right: 17px;
+                            }
+                        }
+                        .googlePlus {
+                            i {
+                                font-size: 30px!important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
 
