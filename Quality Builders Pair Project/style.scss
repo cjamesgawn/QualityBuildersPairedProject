@@ -79,21 +79,34 @@ body {
                     }
                 }
                 .phone-button {
-                    background-color: $orange;
-                    padding-left: 5px;
-                    padding-right: 10px;
-                    height: 35px;
-                    border-radius: 2px;
+                    
                     align-self: center;
-                    &:hover {
-                        background-color: darken($color: $orange, $amount: 10);
-                    }
+                    
                     a {
+                        background-color: $orange;
+                        padding-left: 3px;
+                        padding-right: 10px;
+                        height: 35px;
+                        border-radius: 3px;
                         text-decoration: none;
                         color: $black;
+                        font-weight: 500;
+                        font-size: 17px;
                         display: flex;
                         flex-wrap: nowrap;
                         height: 100%;
+                        border: 3px solid $orange;
+                        &:hover {    
+                            background-color: #fff;
+                            border: 3px solid $orange;
+                            border-radius: 8px;
+                            transition: all 0.3s ease-in;
+                            .mobile-icon {
+                                background-color: $orange;
+                                color: #fff;
+                                transition: all 0.3s ease-in;
+                            }
+                        }
                         .mobile-icon {
                             margin: auto;
                             background-color: white;
@@ -116,8 +129,26 @@ body {
     }
 
     .slides {
-        height: 120px;
-        background-color: $orange;
+        //height: 500px;
+        .arrow {
+            position: absolute;
+            z-index: 1;
+        }
+        .slide {
+            height: 760px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .slideOne {
+            background-image: url(Assets/builder-c-1.jpg);
+
+        }
+        .slideTwo {
+            background-image: url(Assets/builder-c-2.jpg);
+        }
+        .slideThree {
+            background-image: url(Assets/builder-c-3.jpg);
+        }
     }
 
     main {
@@ -138,7 +169,7 @@ body {
                 flex-direction: row;
                 justify-content: space-between;
                 .text {
-                    width: 60%;
+                    width: 70%;
                     color: #fff;
                     font-size: 22px;
                     font-weight: 300;
@@ -154,11 +185,20 @@ body {
                         border: 3px solid $orange;
                         border-radius: 7px;
                         padding: 20px 30px;
-                        font-size: 28px;
+                        font-size: 30px;
                         text-align: center;
                         color: $black;
                         font-weight: 700;
+                        letter-spacing: 1px;
+                        &:hover {
+                            background-color: $orange;
+                            border: 3px solid #fff;
+                            color: #fff;
+                            transform: scale(1.05,1.05);
+                            transition-duration: 0.1s;
+                        }
                     }
+                    
                 }
             }
         }
@@ -169,7 +209,7 @@ body {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-
+                padding: 30px 0 30px 100px;
                 .Contact-Us {
                     display: flex;
                     flex-direction: column;
@@ -180,6 +220,7 @@ body {
                         a {
                             text-decoration: none;
                             color: $black;
+                            font-size: 18px;
                         }
                     }
                 }
@@ -200,16 +241,19 @@ body {
                                 text-decoration: none;
                                 color: $black;
                                 font-weight: 500;
+                                font-size: 18px;
                             }
                         }
                     }
                 }
 
                 .Follow-Us {
+                    max-width: 350px;
                     .socials {
                         display: flex;
                         flex-flow: row wrap;
                         width: 70%;
+                        font-weight: 500;
                         a {
                             width: 50%;
                             min-height: 30px;
@@ -218,29 +262,93 @@ body {
                             color: $black;
                             i {
                                 color: #fff;
-                                font-size: 22px;
-                                padding-right: 10px;
-                                
                             }
                         }
                         .facebook {
                             i {
+                                font-size: 22px;
                                 padding-right: 18px;
+                                padding-left: 3px;
                             }
                         }
                         .linkedIn{
                             i {
                                 font-size: 26px;
                                 padding-right: 17px;
+                                padding-left: 3px;
+                            }
+                        }
+                        .twitter {
+                            i {
+                                font-size: 25px;
                             }
                         }
                         .googlePlus {
                             i {
                                 font-size: 30px!important;
+                                padding-right: 10px;
                             }
                         }
                     }
+                    .headerTwo {
+                        margin:10px 0;
+                        letter-spacing: 1px;
+
+                    }
+                    .mailListForm {
+                        position: absolute;
+
+                        .mailList {
+                            height: 30px;
+                            width: 195px;
+                            border: 0;
+                            border-radius: 8px;
+                            font-size: 18px;
+                            font-weight: 500;
+                            padding-left: 11px;
+                            padding-top: 3px;
+                            padding-bottom: 3px;
+                            &::placeholder {
+                                color: $black;
+                            }
+                            &:focus {
+                                outline: none;
+                            }
+                            select,
+                            textarea {
+                                color: $black;
+                            }
+                        }
+                        .mailListSubmit {
+                            position: relative;
+                            left: -15px;
+                            top: 0px;
+                            height: 36px;
+                            border: 0;
+                            border-radius: 8px;
+                            background-color: $black;
+                            color: #fff;
+                            width: 75px;
+                            font-size: 18px;
+                            font-weight: 400;
+                        }
+                    }
                 }
+            }
+        }
+
+        .copyright {
+            background-color: $black;
+            .container {
+                text-align: center;
+                p {
+                    margin: 0;
+                    color: white;
+                    padding: 32px 0;
+                    font-weight: 300;
+                    font-size: 18px;
+                }
+
             }
         }
     }

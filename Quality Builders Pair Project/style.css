@@ -102,29 +102,43 @@ body header .header .navigation .menu .dropdown:hover .dropdown-menu {
 }
 
 body header .header .navigation .phone-button {
-  background-color: #f69e2a;
-  padding-left: 5px;
-  padding-right: 10px;
-  height: 35px;
-  border-radius: 2px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-body header .header .navigation .phone-button:hover {
-  background-color: #e3850a;
-}
-
 body header .header .navigation .phone-button a {
+  background-color: #f69e2a;
+  padding-left: 3px;
+  padding-right: 10px;
+  height: 35px;
+  border-radius: 3px;
   text-decoration: none;
   color: #101721;
+  font-weight: 500;
+  font-size: 17px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   height: 100%;
+  border: 3px solid #f69e2a;
+}
+
+body header .header .navigation .phone-button a:hover {
+  background-color: #fff;
+  border: 3px solid #f69e2a;
+  border-radius: 8px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+body header .header .navigation .phone-button a:hover .mobile-icon {
+  background-color: #f69e2a;
+  color: #fff;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 body header .header .navigation .phone-button a .mobile-icon {
@@ -143,9 +157,27 @@ body header .header .navigation .phone-button a p {
   padding-left: 10px;
 }
 
-body .slides {
-  height: 120px;
-  background-color: #f69e2a;
+body .slides .arrow {
+  position: absolute;
+  z-index: 1;
+}
+
+body .slides .slide {
+  height: 760px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .slides .slideOne {
+  background-image: url(Assets/builder-c-1.jpg);
+}
+
+body .slides .slideTwo {
+  background-image: url(Assets/builder-c-2.jpg);
+}
+
+body .slides .slideThree {
+  background-image: url(Assets/builder-c-3.jpg);
 }
 
 body main {
@@ -176,7 +208,7 @@ body footer .getInTouch .container {
 }
 
 body footer .getInTouch .container .text {
-  width: 60%;
+  width: 70%;
   color: #fff;
   font-size: 22px;
   font-weight: 300;
@@ -195,10 +227,21 @@ body footer .getInTouch .container .button a {
   border: 3px solid #f69e2a;
   border-radius: 7px;
   padding: 20px 30px;
-  font-size: 28px;
+  font-size: 30px;
   text-align: center;
   color: #101721;
   font-weight: 700;
+  letter-spacing: 1px;
+}
+
+body footer .getInTouch .container .button a:hover {
+  background-color: #f69e2a;
+  border: 3px solid #fff;
+  color: #fff;
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
 }
 
 body footer .footerContent {
@@ -216,6 +259,7 @@ body footer .footerContent .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 30px 0 30px 100px;
 }
 
 body footer .footerContent .container .Contact-Us {
@@ -237,6 +281,7 @@ body footer .footerContent .container .Contact-Us p {
 body footer .footerContent .container .Contact-Us p a {
   text-decoration: none;
   color: #101721;
+  font-size: 18px;
 }
 
 body footer .footerContent .container .Sections ul {
@@ -258,6 +303,11 @@ body footer .footerContent .container .Sections ul li a {
   text-decoration: none;
   color: #101721;
   font-weight: 500;
+  font-size: 18px;
+}
+
+body footer .footerContent .container .Follow-Us {
+  max-width: 350px;
 }
 
 body footer .footerContent .container .Follow-Us .socials {
@@ -269,6 +319,7 @@ body footer .footerContent .container .Follow-Us .socials {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
   width: 70%;
+  font-weight: 500;
 }
 
 body footer .footerContent .container .Follow-Us .socials a {
@@ -281,20 +332,102 @@ body footer .footerContent .container .Follow-Us .socials a {
 
 body footer .footerContent .container .Follow-Us .socials a i {
   color: #fff;
-  font-size: 22px;
-  padding-right: 10px;
 }
 
 body footer .footerContent .container .Follow-Us .socials .facebook i {
+  font-size: 22px;
   padding-right: 18px;
+  padding-left: 3px;
 }
 
 body footer .footerContent .container .Follow-Us .socials .linkedIn i {
   font-size: 26px;
   padding-right: 17px;
+  padding-left: 3px;
+}
+
+body footer .footerContent .container .Follow-Us .socials .twitter i {
+  font-size: 25px;
 }
 
 body footer .footerContent .container .Follow-Us .socials .googlePlus i {
   font-size: 30px !important;
+  padding-right: 10px;
+}
+
+body footer .footerContent .container .Follow-Us .headerTwo {
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+
+body footer .footerContent .container .Follow-Us .mailListForm {
+  position: absolute;
+}
+
+body footer .footerContent .container .Follow-Us .mailListForm .mailList {
+  height: 30px;
+  width: 195px;
+  border: 0;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 11px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+body footer .footerContent .container .Follow-Us .mailListForm .mailList::-webkit-input-placeholder {
+  color: #101721;
+}
+
+body footer .footerContent .container .Follow-Us .mailListForm .mailList:-ms-input-placeholder {
+  color: #101721;
+}
+
+body footer .footerContent .container .Follow-Us .mailListForm .mailList::-ms-input-placeholder {
+  color: #101721;
+}
+
+body footer .footerContent .container .Follow-Us .mailListForm .mailList::placeholder {
+  color: #101721;
+}
+
+body footer .footerContent .container .Follow-Us .mailListForm .mailList:focus {
+  outline: none;
+}
+
+body footer .footerContent .container .Follow-Us .mailListForm .mailList select,
+body footer .footerContent .container .Follow-Us .mailListForm .mailList textarea {
+  color: #101721;
+}
+
+body footer .footerContent .container .Follow-Us .mailListForm .mailListSubmit {
+  position: relative;
+  left: -15px;
+  top: 0px;
+  height: 36px;
+  border: 0;
+  border-radius: 8px;
+  background-color: #101721;
+  color: #fff;
+  width: 75px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+body footer .copyright {
+  background-color: #101721;
+}
+
+body footer .copyright .container {
+  text-align: center;
+}
+
+body footer .copyright .container p {
+  margin: 0;
+  color: white;
+  padding: 32px 0;
+  font-weight: 300;
+  font-size: 18px;
 }
 /*# sourceMappingURL=style.css.map */

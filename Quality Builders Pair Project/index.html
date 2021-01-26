@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/26a1f25226.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src ="js/app.js"></script>
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="/style.css">
     <title>Quality Builders</title>
@@ -50,9 +52,13 @@
 <!-- Banner Content -->
 
 <div class="slides">
-    <div>Slide 1</div>
-    <div>Slide 2</div>
-    <div>Slide 3</div>
+
+
+    <div class="slide slideOne"></div>
+    <div class="slide slideTwo"></div>
+    <div class="slide slideThree"></div>
+
+
 </div>
 
 <!-- Main Content -->
@@ -109,11 +115,11 @@
                     <a href="" class="twitter"><i class="fab fa-twitter"></i>Twitter</a>
                     <a href="" class="googlePlus"><i class="fab fa-google-plus"></i>Google+</a>
                 </div>
-                <h2>Subscribe To Our List</h2>
+                <h2 class="headerTwo">Subscribe To Our List</h2>
                 <form method="GET" class="mailListForm">
-                    <input type="text" class="mailList" placeholder="Enter Email Here" name="mailListSubscription">
+                    <input type="email" class="mailList" placeholder="Enter Email Here" name="mailListSubscription">
                     <button type="submit" class="mailListSubmit">
-                        <span class="form_search-submit-icon">
+                        <span class="mailListSubmitText">
                             Submit
                         </span>
                     </button>
@@ -124,23 +130,13 @@
 
     <div class="copyright">
         <div class="container">
-
+            <p>Copyright &copy QUALITYBUILDERS. All Rights Reserved 2018.</p>
         </div>
     </div>
 
 
 </footer>
 
-<script src="slick/slick.min.js"></script>
-<script>
-    $('.slides').slick({
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        arrows: true,
-        speed: 500,
-        
-    });
-</script>
+
 </body>
 </html>
