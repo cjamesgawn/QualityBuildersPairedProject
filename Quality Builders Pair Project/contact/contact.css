@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #f89323;
+}
+
+.contact-wrapper {
+  border: 4px solid #bdbfc0;
+  background-color: #fff;
+  width: 30%;
+  margin-top: 5%;
+  position: relative;
+  left: 35%;
+  -webkit-box-shadow: #000 0px 0px 15px;
+          box-shadow: #000 0px 0px 15px;
+}
+
+.contact-wrapper h3 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.contact-wrapper .form {
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.contact-wrapper .form label small {
+  color: #f89323;
+}
+
+.contact-wrapper .form input {
+  width: 95%;
+  height: 30px;
+  margin-bottom: 3%;
+  background-color: #d7d8d9;
+  padding: 2%;
+  font-size: 1.125em;
+}
+
+.contact-wrapper .form .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-wrapper .form .first-name-group input, .contact-wrapper .form .last-name-group input {
+  width: 88%;
+}
+
+.contact-wrapper .cap {
+  background-color: #bdbfc0;
+  border: 2px solid #f89323;
+  height: 125px;
+  width: 70%;
+  margin: 5% 15%;
+}
+
+#mapid {
+  height: 180px;
+}
+/*# sourceMappingURL=contact.css.map */
