@@ -1,0 +1,54 @@
+@import '../variables';
+//Colour to be changed when Header and footer are abe to go accross page's
+ html{
+     margin:none;
+ }
+
+p,li{
+    font-size: 1.25em;
+    color:$black;
+    line-height: 1.75;
+    margin-left:15%;
+    width:65%;
+    a, a:visited{
+        color:$black;
+    }
+    a:hover{
+        color:lighten($black,20%);
+    }
+}
+h2{
+    margin:0;
+    font-size: 2em;
+    padding-left: 5%;
+    text-transform: uppercase;
+    color:#fff;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+// .main-content h3:first-of-type{
+//     padding-top: 35px;
+// }
+h3{
+    padding-left:11.5%;
+    font-size: 1.5em;
+    color:#fff;
+    text-decoration: underline;
+    text-transform: capitalize;
+    margin:none;
+}
+body{
+    margin:0;
+}
+
+.main-content{
+    // margin:0;
+    background-color: $orange;
+    padding-top:3%;
+    padding-bottom:3%;
+}
+.colour-bar{
+    background-color: $black;
+    // width:100%;
+    min-height:100px;
+}
