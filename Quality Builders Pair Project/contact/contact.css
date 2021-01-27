@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #f89323;
+  background-color: #f69e2a;
 }
 
 .contact-wrapper {
@@ -30,7 +30,7 @@ body {
 }
 
 .contact-wrapper .form label small {
-  color: #f89323;
+  color: #f69e2a;
 }
 
 .contact-wrapper .form input {
@@ -54,7 +54,7 @@ body {
 
 .contact-wrapper .cap {
   background-color: #bdbfc0;
-  border: 2px solid #f89323;
+  border: 2px solid #f69e2a;
   height: 125px;
   width: 70%;
   margin: 5% 15%;
