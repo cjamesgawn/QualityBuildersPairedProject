@@ -1,7 +1,16 @@
 $orange: rgb(246, 158, 42) ;
-
 $black: #101721;
 $grey: #bdbfc0;
+
+
+// Media Query Breaks
+$xsmall:414px;
+$small:576px;
+$medium:768px;
+$large:992px;
+$xlarge:1260px;
+
+
 
 // Font
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
@@ -9,6 +18,8 @@ $grey: #bdbfc0;
 * {
     font-family: 'Roboto', sans-serif;
 }
+
+
 
 
 // 10px = 0.625rem
@@ -20,3 +31,4 @@ $grey: #bdbfc0;
 // 24px = 1.5rem
 // 30px = 1.875rem
 // 32px = 2rem
+
