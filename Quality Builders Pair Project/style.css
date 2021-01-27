@@ -3,6 +3,111 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.services-container {
+  background-color: #f69e2a;
+  height: 600px;
+  padding: 1% 13%;
+}
+
+.top {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #fff;
+  margin-left: 3%;
+}
+
+.top h2 {
+  text-transform: capitalize;
+  font-size: 2.25em;
+  letter-spacing: 1.75px;
+  margin-right: 35px;
+}
+
+.top h2::after {
+  content: '';
+  display: block;
+  width: 65%;
+  border: #fff solid .1px;
+  margin-top: 10px;
+}
+
+.top p {
+  margin-top: 3%;
+  width: 65%;
+  font-size: 1.125rem;
+  line-height: 1.25;
+}
+
+.services-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.service {
+  width: 25%;
+  height: 450px;
+  margin-left: 30px;
+  background-color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.service .img-cont {
+  width: 100%;
+  height: 200px;
+}
+
+.service .service-img {
+  width: 100%;
+  height: 200px;
+}
+
+.service .service-img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.service p {
+  padding: 15px;
+}
+
+.service i {
+  font-size: 2.5em;
+  background-color: #101721;
+  padding: 25px;
+  border-radius: 50%;
+  color: #fff;
+  position: relative;
+  top: -12%;
+}
+
+.service i:hover {
+  font-size: 2em;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+  color: #cccccc;
+  border: 3px dashed #f69e2a;
+}
+
+.service a {
+  text-decoration: none;
+  color: #101721;
+}
+
+.service a h3 {
+  text-transform: uppercase;
+}
+
+.service a:hover, .service a:visited {
+  color: #101721;
+}
+
+.service a:hover {
+  text-decoration: underline;
+}
+
 body {
   margin: 0;
 }
