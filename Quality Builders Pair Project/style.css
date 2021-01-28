@@ -108,6 +108,65 @@
   text-decoration: underline;
 }
 
+.welcome-container {
+  height: 700px;
+  background-color: #fff;
+}
+
+.welcome-container .container {
+  max-width: 1200px;
+  margin: 40px auto 0;
+}
+
+.welcome-container .container .content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.welcome-container .container .content-wrapper .text-wrapper {
+  width: 50%;
+}
+
+.welcome-container .container .content-wrapper .text-wrapper .title {
+  font-weight: 300;
+  font-size: 40px;
+  margin: 0;
+}
+
+.welcome-container .container .content-wrapper .text-wrapper img {
+  width: 378px;
+  margin-left: -5px;
+}
+
+.welcome-container .container .content-wrapper .text-wrapper .divider {
+  margin: -12px 0 0;
+  font-weight: 300;
+}
+
+.welcome-container .container .content-wrapper .text-wrapper .p-One,
+.welcome-container .container .content-wrapper .text-wrapper .p-Two {
+  font-size: 24px;
+}
+
+.welcome-container .container .content-wrapper .image-wrapper {
+  width: 50%;
+}
+
+.welcome-container .container .content-wrapper .image-wrapper img {
+  width: 600px;
+  margin-left: auto;
+}
+
 body {
   margin: 0;
 }
@@ -262,9 +321,60 @@ body header .header .navigation .phone-button a p {
   padding-left: 10px;
 }
 
-body .slides .arrow {
+body .slides {
+  position: relative;
+}
+
+body .slides .slick-arrow {
   position: absolute;
-  z-index: 1;
+  z-index: 9999;
+  top: 45%;
+  text-indent: -9999px;
+  border: none;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 10px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all,0.3s;
+  transition: all,0.3s;
+}
+
+body .slides .slick-arrow:focus {
+  outline: none;
+}
+
+body .slides .slick-arrow:hover {
+  background: rgba(255, 255, 255, 0.75);
+  -webkit-transition: all,0.3s;
+  transition: all,0.3s;
+}
+
+body .slides .slick-prev {
+  left: 20px;
+}
+
+body .slides .slick-prev:after {
+  content: '';
+  display: block;
+  width: 64px;
+  height: 64px;
+  background: url("Assets/left-arrow.png") no-repeat;
+  background-size: 100%;
+  margin-top: -14px;
+}
+
+body .slides .slick-next {
+  right: 20px;
+}
+
+body .slides .slick-next:after {
+  content: '';
+  display: block;
+  width: 64px;
+  height: 64px;
+  background: url("Assets/right-arrow.png") no-repeat;
+  background-size: 100%;
+  margin-top: -14px;
 }
 
 body .slides .slide {

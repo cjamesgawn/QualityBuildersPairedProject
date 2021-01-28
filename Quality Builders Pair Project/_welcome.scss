@@ -1,0 +1,41 @@
+.welcome-container {
+    height: 700px;
+    background-color: #fff;
+    .container {
+        max-width: 1200px;
+        margin: 40px auto 0;
+        .content-wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .text-wrapper {
+                width: 50%;
+                .title {
+                    font-weight: 300;
+                    font-size: 40px;
+                    margin:0;
+                }
+                img {
+                    width: 378px;
+                    margin-left: -5px;
+                }
+                .divider {
+                    margin:-12px 0 0;
+                    font-weight: 300;
+                }
+                .p-One,
+                .p-Two {
+                    font-size: 24px;
+                } 
+            }
+            .image-wrapper {
+                width: 50%;
+                img {
+                    width:600px;
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+}
