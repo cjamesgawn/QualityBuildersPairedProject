@@ -424,7 +424,7 @@ body .slides {
 body .slides .slick-arrow {
   position: absolute;
   z-index: 9999;
-  top: 45%;
+  top: 40%;
   text-indent: -9999px;
   border: none;
   background: transparent;
@@ -504,7 +504,7 @@ body .slides .slide .overlay h1 {
 }
 
 body .slides .slide .overlay .divider {
-  margin-top: -30px;
+  margin-top: -40px;
   letter-spacing: normal;
 }
 
