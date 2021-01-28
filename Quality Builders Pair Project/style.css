@@ -255,6 +255,7 @@
           transform: scale(1.1, 1.1);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 .welcome-container .container .carousel-wrapper .partner-slides .slideOne img {
@@ -384,6 +385,7 @@ body header .header .navigation .phone-button a {
       flex-wrap: nowrap;
   height: 100%;
   border: 3px solid #f69e2a;
+  cursor: pointer;
 }
 
 body header .header .navigation .phone-button a:hover {
@@ -481,58 +483,76 @@ body .slides .slide {
 }
 
 body .slides .slide img {
+  position: absolute;
+  z-index: -1;
   height: 120%;
   margin-top: -85px;
-  margin-left: -130px;
+  margin-left: -1360px;
 }
 
-body .slides .slide .overlay {
+body .slides .slide .overlay-container {
   position: absolute;
+  max-width: 1200px;
+  margin: 0 auto;
   z-index: 99999;
   top: 70px;
   bottom: 0;
   right: 0;
-  left: 120px;
+  left: 0;
+}
+
+body .slides .slide .overlay-container .overlay {
   color: white;
   letter-spacing: 1px;
 }
 
-body .slides .slide .overlay h1 {
+body .slides .slide .overlay-container .overlay h1 {
   font-size: 60px;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-body .slides .slide .overlay .divider {
+body .slides .slide .overlay-container .overlay .divider {
   margin-top: -40px;
   letter-spacing: normal;
 }
 
-body .slides .slide .overlay h2 {
+body .slides .slide .overlay-container .overlay h2 {
   font-size: 30px;
   font-weight: 500;
   text-transform: uppercase;
 }
 
-body .slides .slide .overlay p {
-  max-width: 24%;
+body .slides .slide .overlay-container .overlay p {
+  max-width: 400px;
   font-size: 26px;
   font-weight: 300;
   letter-spacing: normal;
 }
 
-body .slides .slide .overlay .slider-button {
+body .slides .slide .overlay-container .overlay .slider-button {
   margin-top: 55px;
 }
 
-body .slides .slide .overlay .slider-button a {
+body .slides .slide .overlay-container .overlay .slider-button a {
   text-decoration: none;
   color: #101721;
   font-size: 30px;
   letter-spacing: 1px;
   font-weight: 450;
   background-color: #fff;
-  padding: 25px 50px;
+  padding: 22px 50px;
+  border: 3px solid white;
+  cursor: pointer;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+body .slides .slide .overlay-container .overlay .slider-button a:hover {
+  color: #f69e2a;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  border-radius: 15px;
 }
 
 body .slides .slideOne {

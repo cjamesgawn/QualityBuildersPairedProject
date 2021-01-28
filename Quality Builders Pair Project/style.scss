@@ -98,6 +98,7 @@ body {
                         flex-wrap: nowrap;
                         height: 100%;
                         border: 3px solid $orange;
+                        cursor: pointer;
                         &:hover {    
                             background-color: #fff;
                             border: 3px solid $orange;
@@ -207,53 +208,78 @@ body {
             position: relative;
             
             img {
+                position:absolute;
+                z-index: -1;
                 height: 120%;
                 margin-top: -85px;
-                margin-left: -130px;
+                margin-left: -1360px;
             }
-            .overlay {
+            .overlay-container {
                 position: absolute;
+                max-width: 1200px;
+                margin: 0 auto;
                 z-index: 99999;
                 top: 70px;
                 bottom: 0;
                 right: 0;
-                left: 120px;
-                color: white;
-                letter-spacing: 1px;
-                
-                h1 {
-                    font-size: 60px;
-                    text-transform: uppercase;
-                    letter-spacing: 2px;
-                }
-                .divider {
-                    margin-top: -40px;
-                    letter-spacing: normal;
-                }
-                h2 {
-                    font-size: 30px;
-                    font-weight: 500;
-                    text-transform: uppercase;
-                }
-                p {
-                    max-width:24%;
-                    font-size: 26px;
-                    font-weight: 300;
-                    letter-spacing: normal;
-                }
-                .slider-button {
-                    margin-top: 55px;
-                    a {
-                        text-decoration: none;
-                        color: $black;
+                left: 0;
+                .overlay {
+                    // position: absolute;
+                    // z-index: 99999;
+                    // top: 70px;
+                    // bottom: 0;
+                    // right: 0;
+                    // left: 120px;
+                    color: white;
+                    letter-spacing: 1px;
+                    
+                    h1 {
+                        font-size: 60px;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                    }
+                    .divider {
+                        margin-top: -40px;
+                        letter-spacing: normal;
+                    }
+                    h2 {
                         font-size: 30px;
-                        letter-spacing: 1px;
-                        font-weight: 450;
-                        background-color: #fff;
-                        padding: 25px 50px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                    }
+                    p {
+                        max-width:400px;
+                        font-size: 26px;
+                        font-weight: 300;
+                        letter-spacing: normal;
+                    }
+                    .slider-button {
+                        margin-top: 55px;
+                        a {
+                            text-decoration: none;
+                            color: $black;
+                            font-size: 30px;
+                            letter-spacing: 1px;
+                            font-weight: 450;
+                            background-color: #fff;
+                            padding: 22px 50px;
+                            border: 3px solid white;
+                            cursor: pointer;
+                            transition: all .5s;
+                            &:hover {
+                                //background-color: $orange;
+                                //color: #fff;
+                                color: $orange;
+                                // transform: scale(1.05,1.05);
+                                transition-duration: 0.1s;
+                                //border: 3px solid $black;
+                                border-radius: 15px;
+                            }
+                        }
                     }
                 }
             }
+            
         }
         .slideOne {
             background-image: url(Assets/builder-c-1.jpg);
