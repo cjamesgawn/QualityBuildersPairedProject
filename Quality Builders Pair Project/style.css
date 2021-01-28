@@ -45,10 +45,17 @@
   display: flex;
 }
 
+.services-wrapper .service {
+  margin-right: 2.5%;
+}
+
+.services-wrapper .service:last-of-type {
+  margin-right: 0;
+}
+
 .service {
-  width: 25%;
+  width: 30%;
   height: 450px;
-  margin-left: 30px;
   background-color: #fff;
   text-align: center;
 }
@@ -87,6 +94,7 @@
 
 .service i:hover {
   color: #bdbfc0;
+  border: 3px dashed #f69e2a;
 }
 
 .service a {
@@ -110,11 +118,13 @@
   .top {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-left: 22%;
     width: 100%;
   }
+  .top p {
+    width: 85%;
+  }
   .services-container {
-    height: 1750px;
+    height: auto;
   }
   .services-wrapper {
     -ms-flex-wrap: wrap;
@@ -123,6 +133,9 @@
   .services-wrapper .service {
     width: 95%;
     margin-top: 35px;
+  }
+  .services-wrapper .service:last-of-type {
+    margin-bottom: 35px;
   }
 }
 
