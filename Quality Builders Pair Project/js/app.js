@@ -9,4 +9,16 @@ $('document').ready(function(){
         
     });
 
+    $('.partner-slides').slick({
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        arrows: true,
+        speed: 600,
+        slidesToShow:4,
+        slidesToScroll:1,
+        
+        
+    });
+
 });
