@@ -332,9 +332,11 @@ body header .header .navigation .menu li a {
 
 body header .header .navigation .menu .dropdown {
   float: left;
+  position: relative;
 }
 
 body header .header .navigation .menu .dropdown .dropdown-menu {
+  position: absolute;
   z-index: 1000;
   display: none;
   font-size: 1rem;
@@ -475,6 +477,62 @@ body .slides .slide {
   height: 760px;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+body .slides .slide img {
+  height: 120%;
+  margin-top: -85px;
+  margin-left: -130px;
+}
+
+body .slides .slide .overlay {
+  position: absolute;
+  z-index: 99999;
+  top: 70px;
+  bottom: 0;
+  right: 0;
+  left: 120px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+body .slides .slide .overlay h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+body .slides .slide .overlay .divider {
+  margin-top: -30px;
+  letter-spacing: normal;
+}
+
+body .slides .slide .overlay h2 {
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+body .slides .slide .overlay p {
+  max-width: 24%;
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: normal;
+}
+
+body .slides .slide .overlay .slider-button {
+  margin-top: 55px;
+}
+
+body .slides .slide .overlay .slider-button a {
+  text-decoration: none;
+  color: #101721;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-weight: 450;
+  background-color: #fff;
+  padding: 25px 50px;
 }
 
 body .slides .slideOne {

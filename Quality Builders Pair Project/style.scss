@@ -52,7 +52,9 @@ body {
 
                     .dropdown {
                         float: left;
+                        position: relative;
                         .dropdown-menu {
+                            position: absolute;
                             z-index: 1000;
                             display: none;
                             font-size: 1rem;
@@ -202,6 +204,56 @@ body {
             height: 760px;
             background-repeat: no-repeat;
             background-size: cover;
+            position: relative;
+            
+            img {
+                height: 120%;
+                margin-top: -85px;
+                margin-left: -130px;
+            }
+            .overlay {
+                position: absolute;
+                z-index: 99999;
+                top: 70px;
+                bottom: 0;
+                right: 0;
+                left: 120px;
+                color: white;
+                letter-spacing: 1px;
+                
+                h1 {
+                    font-size: 60px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+                .divider {
+                    margin-top: -30px;
+                    letter-spacing: normal;
+                }
+                h2 {
+                    font-size: 30px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                }
+                p {
+                    max-width:24%;
+                    font-size: 26px;
+                    font-weight: 300;
+                    letter-spacing: normal;
+                }
+                .slider-button {
+                    margin-top: 55px;
+                    a {
+                        text-decoration: none;
+                        color: $black;
+                        font-size: 30px;
+                        letter-spacing: 1px;
+                        font-weight: 450;
+                        background-color: #fff;
+                        padding: 25px 50px;
+                    }
+                }
+            }
         }
         .slideOne {
             background-image: url(Assets/builder-c-1.jpg);
