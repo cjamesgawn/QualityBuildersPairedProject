@@ -206,23 +206,25 @@ body {
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;
+            z-index: -1;
             
-            img {
-                position:absolute;
-                z-index: -1;
-                height: 120%;
-                margin-top: -85px;
-                margin-left: -1360px;
-            }
+            
             .overlay-container {
                 position: absolute;
                 max-width: 1200px;
                 margin: 0 auto;
-                z-index: 99999;
+                z-index: 9999;
                 top: 70px;
                 bottom: 0;
                 right: 0;
                 left: 0;
+                img {
+                    position:absolute;
+                    z-index: -10;
+                    height: 120%;
+                    margin-top: -100px;
+                    margin-left: -1360px;
+                }
                 .overlay {
                     // position: absolute;
                     // z-index: 99999;
