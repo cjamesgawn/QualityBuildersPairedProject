@@ -7,13 +7,13 @@
 .top{
     display:flex;
     color:#fff;
-    margin-left: 3%;
+    // margin-left: 1%;
     
     h2{
         text-transform: capitalize;
         font-size: 2.25em;
         letter-spacing: 1.75px;
-        margin-right:35px;
+        margin-right:25px;
         &::after{
             content: '';
             display:block;
@@ -24,8 +24,8 @@
     }
     p{
         margin-top:3%;
-        width:65%;
-        font-size:1.125rem;
+        width:70%;
+        font-size:1.125em;
         line-height: 1.25;
     }
 }
@@ -44,7 +44,7 @@
 
 .service{
     width:30%; //*3 =90 10% r
-    height:450px;
+    height:410px;
     // margin-left:30px;
     background-color: #fff;
     text-align: center;
@@ -66,30 +66,37 @@
     
     }
     
-    p{
-        padding:15px;
-    }
-    i{
-        font-size: 2.5em;
-        background-color: $black;
-        padding:25px;
-        border-radius: 50%;
-        color:#fff;
-        position: relative;
-        top:-12%;
-        //House Grow animation
-        //spanner tilt animation
-        //cogs shrink slightly?
-        &:hover{
-            // transform:/*scale(1.1)*/ rotate(-10deg);
-            color: $grey;
-            border: 3px dashed $orange;
+   
+    .icon-wrapper{
+        position:relative;
+        top:-65%;
+
+        i{
+            font-size: 2.5em;
+            background-color: $black;
+            padding:25px;
+            border-radius: 50%;
+            color:#fff;
+            // top:-52.5%;
+            //House Grow animation
+            //spanner tilt animation
+            //cogs shrink slightly?
+            &:hover{
+                transform:scale(1.1) rotate(-360deg);
+                transition-duration: .75s ;
+                color: $grey;
+                border: 3px dashed $orange;
+            }
         }
     }
+
+    //Service titles
     a {
         text-decoration: none;
         color:$black;
         h3{
+            margin-top:40px;
+            margin-bottom: 0;
             text-transform: uppercase;
         }
         &:hover,&:visited{
@@ -98,6 +105,14 @@
         &:hover{
             text-decoration: underline;
         }
+    }
+
+    //service text
+    p{
+        letter-spacing: .5px;
+        margin-top: 0;
+        padding:10px 25px;
+        font-size: 1.125em;
     }
 }
 
