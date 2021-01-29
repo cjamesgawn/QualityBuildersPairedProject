@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 * {
   font-family: 'Roboto', sans-serif;
@@ -150,6 +151,258 @@
   }
 }
 
+.welcome-container {
+  background-color: #fff;
+}
+
+.welcome-container .container {
+  max-width: 1200px;
+  margin: 40px auto 0;
+}
+
+.welcome-container .container .content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.welcome-container .container .content-wrapper .text-wrapper {
+  width: 48%;
+}
+
+.welcome-container .container .content-wrapper .text-wrapper .title {
+  font-weight: 300;
+  font-size: 40px;
+  margin: 0;
+}
+
+.welcome-container .container .content-wrapper .text-wrapper img {
+  width: 378px;
+  margin-left: -5px;
+}
+
+.welcome-container .container .content-wrapper .text-wrapper .divider {
+  margin: -12px 0 0;
+  font-weight: 300;
+  letter-spacing: normal;
+}
+
+.welcome-container .container .content-wrapper .text-wrapper p {
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-top: 40px;
+}
+
+.welcome-container .container .content-wrapper .image-wrapper {
+  width: 50%;
+}
+
+.welcome-container .container .content-wrapper .image-wrapper img {
+  width: 600px;
+  margin-left: auto;
+}
+
+.welcome-container .container .carousel-wrapper h1 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.welcome-container .container .carousel-wrapper .divider {
+  margin-top: -30px;
+  font-weight: 300;
+}
+
+.welcome-container .container .carousel-wrapper .partner-slides {
+  position: relative;
+}
+
+.welcome-container .container .carousel-wrapper .partner-slides .slick-arrow {
+  position: absolute;
+  z-index: 9999;
+  top: 30%;
+  text-indent: -9999px;
+  border: none;
+  background: transparent;
+  padding: 10px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all,0.3s;
+  transition: all,0.3s;
+}
+
+.welcome-container .container .carousel-wrapper .partner-slides .slick-arrow:focus {
+  outline: none;
+}
+
+.welcome-container .container .carousel-wrapper .partner-slides .slick-arrow:hover {
+  -webkit-transition: all,0.3s;
+  transition: all,0.3s;
+}
+
+.welcome-container .container .carousel-wrapper .partner-slides .slick-prev {
+  left: -100px;
+}
+
+.welcome-container .container .carousel-wrapper .partner-slides .slick-prev:after {
+  content: '';
+  display: block;
+  width: 64px;
+  height: 64px;
+  background: url("Assets/left-arrow.png") no-repeat;
+  background-size: 100%;
+  margin-top: -14px;
+}
+
+.welcome-container .container .carousel-wrapper .partner-slides .slick-next {
+  right: -100px;
+}
+
+.welcome-container .container .carousel-wrapper .partner-slides .slick-next:after {
+  content: '';
+  display: block;
+  width: 64px;
+  height: 64px;
+  background: url("Assets/right-arrow.png") no-repeat;
+  background-size: 100%;
+  margin-top: -14px;
+}
+
+.welcome-container .container .carousel-wrapper .partner-slides .slide {
+  padding: 10px 10px 0;
+  height: 170px;
+}
+
+.welcome-container .container .carousel-wrapper .partner-slides .slide img {
+  max-height: 150px;
+  margin: 0 auto;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.welcome-container .container .carousel-wrapper .partner-slides .slide img:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.welcome-container .container .carousel-wrapper .partner-slides .slideOne img {
+  height: 130px;
+}
+
+.testimonial-container .container {
+  max-width: 1200px;
+  margin: 30px auto 80px;
+}
+
+.testimonial-container .container .carousel-wrapper .testimonial-slide {
+  position: relative;
+}
+
+.testimonial-container .container .carousel-wrapper .testimonial-slide .slide p {
+  font-size: 25px;
+  font-weight: 300;
+  letter-spacing: .8px;
+}
+
+.testimonial-container .container .carousel-wrapper .testimonial-slide .slide .author {
+  width: 50%;
+  margin: 0;
+  float: left;
+}
+
+.testimonial-container .container .carousel-wrapper .testimonial-slide .slide .quote-container {
+  width: 50%;
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.testimonial-container .container .carousel-wrapper .testimonial-slide .slide .quote-container .quote-bottom {
+  margin-left: auto;
+}
+
+.testimonial-container .container .carousel-wrapper .testimonial-slide .slick-dots {
+  list-style: none;
+  position: absolute;
+  bottom: -25px;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.testimonial-container .container .carousel-wrapper .testimonial-slide .slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 2px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.testimonial-container .container .carousel-wrapper .testimonial-slide .slick-dots li button {
+  border: 0;
+  background: transparent;
+  display: block;
+  height: 20px;
+  width: 20px;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.testimonial-container .container .carousel-wrapper .testimonial-slide .slick-dots li button:hover, .testimonial-container .container .carousel-wrapper .testimonial-slide .slick-dots li button:focus {
+  outline: none;
+}
+
+.testimonial-container .container .carousel-wrapper .testimonial-slide .slick-dots li button:hover:before, .testimonial-container .container .carousel-wrapper .testimonial-slide .slick-dots li button:focus:before {
+  opacity: 1;
+}
+
+.testimonial-container .container .carousel-wrapper .testimonial-slide .slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "•";
+  width: 20px;
+  height: 20px;
+  font-family: "slick";
+  font-size: 30px;
+  line-height: 20px;
+  text-align: center;
+  color: black;
+  opacity: 0.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.testimonial-container .container .carousel-wrapper .testimonial-slide .slick-dots li button.slick-active button:before {
+  color: black;
+  opacity: 0.75;
+}
+
 body {
   margin: 0;
 }
@@ -221,9 +474,11 @@ body header .header .navigation .menu li a {
 
 body header .header .navigation .menu .dropdown {
   float: left;
+  position: relative;
 }
 
 body header .header .navigation .menu .dropdown .dropdown-menu {
+  position: absolute;
   z-index: 1000;
   display: none;
   font-size: 1rem;
@@ -271,6 +526,7 @@ body header .header .navigation .phone-button a {
       flex-wrap: nowrap;
   height: 100%;
   border: 3px solid #f69e2a;
+  cursor: pointer;
 }
 
 body header .header .navigation .phone-button a:hover {
@@ -304,15 +560,140 @@ body header .header .navigation .phone-button a p {
   padding-left: 10px;
 }
 
-body .slides .arrow {
+body .slides {
+  position: relative;
+}
+
+body .slides .slick-arrow {
   position: absolute;
-  z-index: 1;
+  z-index: 9999;
+  top: 40%;
+  text-indent: -9999px;
+  border: none;
+  background: transparent;
+  padding: 10px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all,0.3s;
+  transition: all,0.3s;
+}
+
+body .slides .slick-arrow:focus {
+  outline: none;
+}
+
+body .slides .slick-arrow:hover {
+  background: rgba(255, 255, 255, 0.75);
+  -webkit-transition: all,0.3s;
+  transition: all,0.3s;
+}
+
+body .slides .slick-prev {
+  left: 20px;
+}
+
+body .slides .slick-prev:after {
+  content: '';
+  display: block;
+  width: 64px;
+  height: 64px;
+  background: url("Assets/left-arrow.png") no-repeat;
+  background-size: 100%;
+  margin-top: -14px;
+}
+
+body .slides .slick-next {
+  right: 20px;
+}
+
+body .slides .slick-next:after {
+  content: '';
+  display: block;
+  width: 64px;
+  height: 64px;
+  background: url("Assets/right-arrow.png") no-repeat;
+  background-size: 100%;
+  margin-top: -14px;
 }
 
 body .slides .slide {
   height: 760px;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+body .slides .slide img {
+  position: absolute;
+  z-index: -1;
+  height: 120%;
+  margin-top: -85px;
+  margin-left: -1360px;
+}
+
+body .slides .slide .overlay-container {
+  position: absolute;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 99999;
+  top: 70px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+body .slides .slide .overlay-container .overlay {
+  color: white;
+  letter-spacing: 1px;
+}
+
+body .slides .slide .overlay-container .overlay h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+body .slides .slide .overlay-container .overlay .divider {
+  margin-top: -40px;
+  letter-spacing: normal;
+}
+
+body .slides .slide .overlay-container .overlay h2 {
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+body .slides .slide .overlay-container .overlay p {
+  max-width: 400px;
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: normal;
+}
+
+body .slides .slide .overlay-container .overlay .slider-button {
+  margin-top: 55px;
+}
+
+body .slides .slide .overlay-container .overlay .slider-button a {
+  text-decoration: none;
+  color: #101721;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-weight: 450;
+  background-color: #fff;
+  padding: 22px 50px;
+  border: 3px solid white;
+  cursor: pointer;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+body .slides .slide .overlay-container .overlay .slider-button a:hover {
+  color: #f69e2a;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  border-radius: 15px;
 }
 
 body .slides .slideOne {
