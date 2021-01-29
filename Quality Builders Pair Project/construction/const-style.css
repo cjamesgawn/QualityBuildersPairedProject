@@ -80,6 +80,7 @@ p {
   background-color: #101721;
   height: auto;
   padding: 15px 0;
+  width: 100%;
 }
 
 .eval p {
