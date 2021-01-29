@@ -28,6 +28,7 @@ $('document').ready(function(){
         speed: 600,
         fade: true,
         dots: true,
+        //focusOnSelect: true,
     });
 
 });
