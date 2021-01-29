@@ -6,7 +6,7 @@ $('document').ready(function(){
         arrows: true,
         speed: 500,
         fade: true,
-        autoplay: true
+       //autoplay: true
     });
 
     $('.partner-slides').slick({

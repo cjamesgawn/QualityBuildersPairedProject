@@ -58,18 +58,27 @@ body {
                             z-index: 1000;
                             display: none;
                             font-size: 1rem;
-                            padding: 5px 0;
+                            padding:0;
                             background-color: $orange;                            
 
                             li {
                                 line-height:normal;
                                 font-size: 14px;
-                                padding: 5px 0;
-                                height:auto;
+                                height: 34px;
+                                transition: all .5s;
+                                &:hover {
+                                    transition: all .5s;
+                                    background-color: white;
+                                    a {
+                                        color: $orange;
+                                    }
+                                }
                                 a {
-                                    margin: auto;
+                                    height: 100%;
+                                    width: 100%;
                                     display:block;
                                     text-align:center;
+                                    line-height: 34px;
                                 }
                             }
                         }
@@ -206,7 +215,7 @@ body {
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;
-            z-index: -1;
+            //z-index: -1;
             
             
             .overlay-container {
@@ -227,7 +236,7 @@ body {
                 }
                 .overlay {
                     // position: absolute;
-                    // z-index: 99999;
+                     z-index: 99999;
                     // top: 70px;
                     // bottom: 0;
                     // right: 0;
