@@ -6,8 +6,8 @@ $('document').ready(function(){
         autoplaySpeed: 5000,
         arrows: true,
         speed: 500,
-        fade: true
-        
+        fade: true,
+
     });
 
     $('.partner-slides').slick({
@@ -18,8 +18,16 @@ $('document').ready(function(){
         speed: 600,
         slidesToShow:4,
         slidesToScroll:1,
-        
-        
+    });
+
+    $('.testimonial-slide').slick({
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 500,
+        arrows: false,
+        speed: 600,
+        fade: true,
+        dots: true,
     });
 
 });

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 * {
   font-family: 'Roboto', sans-serif;
@@ -260,6 +261,104 @@
 
 .welcome-container .container .carousel-wrapper .partner-slides .slideOne img {
   height: 130px;
+}
+
+.testimonial-container .container {
+  max-width: 1200px;
+  margin: 30px auto 80px;
+}
+
+.testimonial-container .container .carousel-wrapper .testimonial-slide {
+  position: relative;
+}
+
+.testimonial-container .container .carousel-wrapper .testimonial-slide .slide p {
+  font-size: 25px;
+  font-weight: 300;
+  letter-spacing: .8px;
+}
+
+.testimonial-container .container .carousel-wrapper .testimonial-slide .slide .author {
+  width: 50%;
+  margin: 0;
+  float: left;
+}
+
+.testimonial-container .container .carousel-wrapper .testimonial-slide .slide .quote-container {
+  width: 50%;
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.testimonial-container .container .carousel-wrapper .testimonial-slide .slide .quote-container .quote-bottom {
+  margin-left: auto;
+}
+
+.testimonial-container .container .carousel-wrapper .testimonial-slide .slick-dots {
+  list-style: none;
+  position: absolute;
+  bottom: -25px;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.testimonial-container .container .carousel-wrapper .testimonial-slide .slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 2px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.testimonial-container .container .carousel-wrapper .testimonial-slide .slick-dots li button {
+  border: 0;
+  background: transparent;
+  display: block;
+  height: 20px;
+  width: 20px;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.testimonial-container .container .carousel-wrapper .testimonial-slide .slick-dots li button:hover, .testimonial-container .container .carousel-wrapper .testimonial-slide .slick-dots li button:focus {
+  outline: none;
+}
+
+.testimonial-container .container .carousel-wrapper .testimonial-slide .slick-dots li button:hover:before, .testimonial-container .container .carousel-wrapper .testimonial-slide .slick-dots li button:focus:before {
+  opacity: 1;
+}
+
+.testimonial-container .container .carousel-wrapper .testimonial-slide .slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "•";
+  width: 20px;
+  height: 20px;
+  font-family: "slick";
+  font-size: 30px;
+  line-height: 20px;
+  text-align: center;
+  color: black;
+  opacity: 0.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.testimonial-container .container .carousel-wrapper .testimonial-slide .slick-dots li button.slick-active button:before {
+  color: black;
+  opacity: 0.75;
 }
 
 body {
