@@ -6,124 +6,160 @@
 
 .services-container {
   background-color: #f69e2a;
-  height: 600px;
-  padding: 1% 13%;
+  padding-bottom: 35px;
 }
 
-.top {
+.services-container .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-container .container .top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   color: #fff;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.top h2 {
+.services-container .container .top h2 {
   text-transform: capitalize;
-  font-size: 2.25em;
+  font-size: 40px;
+  font-weight: 500;
   letter-spacing: 1.75px;
-  margin-right: 25px;
 }
 
-.top h2::after {
+.services-container .container .top h2::after {
   content: '';
   display: block;
-  width: 65%;
+  width: 66%;
   border: #fff solid .1px;
   margin-top: 10px;
 }
 
-.top p {
+.services-container .container .top p {
   margin-top: 3%;
-  width: 70%;
-  font-size: 1.125em;
+  width: 75%;
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: .5px;
   line-height: 1.25;
 }
 
-.services-wrapper {
+.services-container .container .services-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.services-wrapper .service {
-  margin-right: 2.5%;
-}
-
-.services-wrapper .service:last-of-type {
-  margin-right: 0;
-}
-
-.service {
-  width: 30%;
-  height: 410px;
+.services-container .container .services-wrapper .service {
+  width: 378px;
+  height: 490px;
   background-color: #fff;
   text-align: center;
+  position: relative;
 }
 
-.service .img-cont {
-  width: 100%;
-  height: 200px;
+.services-container .container .services-wrapper .service .img-cont {
+  height: 50%;
   overflow: hidden;
   background-color: #fff;
 }
 
-.service .img-cont .service-img {
+.services-container .container .services-wrapper .service .img-cont .service-img {
+  height: 100%;
   width: 100%;
-  height: 200px;
+  -webkit-transition: all .75s;
+  transition: all .75s;
 }
 
-.service .img-cont .service-img:hover {
+.services-container .container .services-wrapper .service .img-cont .service-img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   opacity: 0.7;
+  -webkit-transition: all .75s;
+  transition: all .75s;
 }
 
-.service .icon-wrapper {
-  position: relative;
-  top: -65%;
-}
-
-.service .icon-wrapper i {
-  font-size: 2.5em;
-  background-color: #101721;
-  padding: 25px;
-  border-radius: 50%;
-  color: #fff;
-}
-
-.service .icon-wrapper i:hover {
-  -webkit-transform: scale(1.1) rotate(-360deg);
-          transform: scale(1.1) rotate(-360deg);
-  -webkit-transition-duration: .75s;
-          transition-duration: .75s;
-  color: #bdbfc0;
-  border: 3px dashed #f69e2a;
-}
-
-.service a {
+.services-container .container .services-wrapper .service a {
   text-decoration: none;
   color: #101721;
 }
 
-.service a h3 {
-  margin-top: 40px;
-  margin-bottom: 0;
+.services-container .container .services-wrapper .service a h3 {
+  margin: 45px 0 0;
   text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: .2px;
 }
 
-.service a:hover, .service a:visited {
+.services-container .container .services-wrapper .service a:hover, .services-container .container .services-wrapper .service a:visited {
   color: #101721;
 }
 
-.service a:hover {
+.services-container .container .services-wrapper .service a:hover {
   text-decoration: underline;
 }
 
-.service p {
-  letter-spacing: .5px;
-  margin-top: 0;
-  padding: 10px 25px;
-  font-size: 1.125em;
+.services-container .container .services-wrapper .service p {
+  letter-spacing: .6px;
+  margin: 0;
+  padding: 10px 25px 0;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+.services-container .container .services-wrapper .service .icon-wrapper {
+  position: absolute;
+  top: 36%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.services-container .container .services-wrapper .service .icon-wrapper .icon {
+  background-color: #101721;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  -webkit-transition: all .75s;
+  transition: all .75s;
+}
+
+.services-container .container .services-wrapper .service .icon-wrapper .icon:hover {
+  -webkit-transform: scale(1.05) rotate(-360deg);
+          transform: scale(1.05) rotate(-360deg);
+  -webkit-transition: all .75s;
+  transition: all .75s;
+  border: 3px dashed #f69e2a;
+}
+
+.services-container .container .services-wrapper .service .icon-wrapper .icon:hover i {
+  color: #bdbfc0;
+  -webkit-transition: all .75s;
+  transition: all .75s;
+}
+
+.services-container .container .services-wrapper .service .icon-wrapper .icon i {
+  font-size: 53px;
+  line-height: 100px;
+  color: #fff;
+}
+
+.services-container .container .services-wrapper .service .icon-wrapper .icon .cog {
+  font-size: 44px;
 }
 
 @media (max-width: 500px) {
@@ -308,6 +344,12 @@
 .testimonial-container .container {
   max-width: 1200px;
   margin: 30px auto 80px;
+}
+
+.testimonial-container .container h1 {
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
 }
 
 .testimonial-container .container .carousel-wrapper .testimonial-slide {
