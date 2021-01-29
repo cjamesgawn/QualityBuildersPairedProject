@@ -23,7 +23,7 @@ $('document').ready(function(){
     $('.testimonial-slide').slick({
         infinite: true,
         autoplay: true,
-        autoplaySpeed: 500,
+        autoplaySpeed: 10000,
         arrows: false,
         speed: 600,
         fade: true,
