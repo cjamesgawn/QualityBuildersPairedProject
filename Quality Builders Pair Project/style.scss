@@ -1,5 +1,5 @@
 //Import Colour and Font
-@import 'variables','services','welcome','testimonialsHomepage';
+@import 'variables','services','welcome','testimonialsHomepage','const-style';
 
 
 body {
@@ -248,6 +248,13 @@ body {
                         font-size: 60px;
                         text-transform: uppercase;
                         letter-spacing: 2px;
+                        &::after{
+                            content: '';
+                            display:block;
+                            width: 50%;
+                            border:#fff solid .1px;
+                            margin-top:10px;
+                        }
                     }
                     .divider {
                         margin-top: -40px;
@@ -370,6 +377,7 @@ body {
                         color: $black;
                         margin: 5px 0;
                         font-weight: 500;
+                        font-size: 18px;
                         a {
                             text-decoration: none;
                             color: $black;

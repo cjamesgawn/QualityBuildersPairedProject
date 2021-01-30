@@ -15,6 +15,13 @@ $slick-opacity-not-active: 0.25 !default;
             font-size: 40px;
             font-weight: 500;
             letter-spacing: 1.5px;
+            &::after{
+                content: '';
+                display:block;
+                width: 25%;
+                border:$black solid .1px;
+                margin-top:10px;
+            }
         }
         max-width: 1200px;
         margin: 30px auto 80px;
