@@ -526,25 +526,54 @@ body .main-content .content {
   background-color: #fff;
   color: #101721;
   font-size: 1.25em;
+  position: relative;
 }
 
 body .main-content .content .container {
   max-width: 1200px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-body .main-content .content h2 {
-  padding-top: 3%;
-}
-
-body .main-content .content p {
+body .main-content .content .container .text-wrapper {
   width: 45%;
+  position: relative;
 }
 
-body .main-content .content #constr {
-  width: 50%;
-  margin-bottom: 5%;
-  margin-top: 1%;
+body .main-content .content .container .text-wrapper h2 {
+  color: #101721;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+body .main-content .content .container .text-wrapper h2::after {
+  content: '';
+  display: block;
+  width: 35%;
+  border: #101721 solid 0.1px;
+  margin-top: 10px;
+}
+
+body .main-content .content .container .text-wrapper p {
+  font-size: 24px;
+}
+
+body .main-content .content .container .text-wrapper h3 {
+  color: #101721;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: normal;
+  margin-bottom: 0;
+}
+
+body .main-content .content .container .text-wrapper .dropdown {
+  position: absolute;
   padding: 5px;
   font-size: 1.25em;
   background-color: #f2a100;
