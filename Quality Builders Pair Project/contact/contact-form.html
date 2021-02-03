@@ -83,14 +83,18 @@
         <div id="mapid"></div><!-- Map -->
         <div class="cap"> reCapatcha goes here</div>
     </div>
+
     <!-- GDPR Tickbox -->
     <div class ="check"> 
-    <input type="checkbox" id="check" name="check">
-        <p>
-            Please tick this box if you agree to our <a href="../privacy/privacy.html">Privacy Policy</a> on how we use your data.
-        </p> 
+        <input type="checkbox" id="check" name="check">
+            <p>
+                Please tick this box if you agree to our <a href="../privacy/privacy.html">Privacy Policy</a> on how we use your data.
+            </p> 
+            
     </div>
+    <input type="submit" id= "submit" name="submit">
 </div>
+
     <script>
         var mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
