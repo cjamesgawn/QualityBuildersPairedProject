@@ -1,5 +1,4 @@
-//Import Colour and Font
-@import 'variables','services','welcome','testimonialsHomepage','const-style';
+
 
 
 body {
@@ -136,6 +135,12 @@ body {
                         }
                     }
                 }
+            }
+            .phone-button-small {
+                display: none;
+            }
+            .sidebar-button {
+                display: none;
             }
         }
     }
@@ -516,3 +521,9 @@ body {
 
 
 }
+
+
+
+
+//Import Variables and Styles
+@import 'variables','services','welcome','testimonialsHomepage','const-style','mediaQueries';

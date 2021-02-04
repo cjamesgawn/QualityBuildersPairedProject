@@ -1,0 +1,60 @@
+@import 'variables';
+
+
+
+@media (max-width:$tablet) {
+    #header {
+        header {
+            .header {
+                .logo {
+                    width: 40%;
+                    a {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+                .navigation {
+                    //width: 30%;
+                    .menu {
+                        display: flex;
+                    }
+                }
+                .sidebar-button {
+                    display: block;
+                }
+            }
+        }
+    }   
+    
+
+
+
+    .welcome-container {
+        .container {
+            .content-wrapper {
+                //flex-direction: column;
+                .text-wrapper {
+                    width: 100%;
+                }
+                .image-wrapper {
+                    //display: ;
+                    img {
+                        width: auto;
+                    }
+                }
+            }
+            .carousel-wrapper {
+                display: none!important;
+            }
+        }
+    }
+}
+
+@media (max-width:$mobileS) {
+
+
+
+
+}
+

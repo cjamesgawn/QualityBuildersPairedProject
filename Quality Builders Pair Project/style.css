@@ -618,6 +618,33 @@ body .main-content .content .eval a:hover {
           transition-duration: 0.1s;
 }
 
+@media (max-width: 768px) {
+  header .header .logo {
+    width: 40%;
+  }
+  header .header .logo a img {
+    width: 100%;
+  }
+  header .header .navigation {
+    width: auto;
+  }
+  header .header .navigation .menu {
+    display: none !important;
+  }
+  header .header .sidebar-button {
+    display: block !important;
+  }
+  .welcome-container .container .content-wrapper .text-wrapper {
+    width: 100%;
+  }
+  .welcome-container .container .content-wrapper .image-wrapper img {
+    width: auto;
+  }
+  .welcome-container .container .carousel-wrapper {
+    display: none !important;
+  }
+}
+
 body {
   margin: 0;
 }
@@ -786,6 +813,14 @@ body header .header .navigation .phone-button a .mobile-icon {
 body header .header .navigation .phone-button a p {
   margin: auto;
   padding-left: 10px;
+}
+
+body header .header .phone-button-small {
+  display: none;
+}
+
+body header .header .sidebar-button {
+  display: none;
 }
 
 body .slides {
