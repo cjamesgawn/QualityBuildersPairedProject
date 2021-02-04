@@ -36,7 +36,7 @@
             </a>
         </div>
         <div class="sidebar-button">
-            <button type="button" class="menu-button" data-toggle="sidebar">
+            <button type="button" class="menu-button" onclick="openNav()">
                 <span class="hamburger-box">
                     <span class="hamburger-inner">
                     </span>
@@ -44,5 +44,30 @@
                 <span class="title">Menu</span>
             </button>
         </div>
+    </div>
+    <div class="sidebar" id="mySidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="list-items">
+            <div class="item"><a href="">About Us</a></div>
+            <div class="item"><a href="">Services</a></div>
+            <div class="item"><a href="" class="sub-menu"><i class="fas fa-chevron-right"></i>Construction</a></div>
+            <div class="item"><a href="" class="sub-menu"><i class="fas fa-chevron-right"></i>Architecture</a></div>
+            <div class="item"><a href="" class="sub-menu"><i class="fas fa-chevron-right"></i>Installation</a></div>
+            <div class="item"><a href="">Testimonials</a></div>
+            <div class="item"><a href="">Contact-Us</a></div>
+        </div>
+        
+        <!-- <ul>
+            <li class="item"><a href="">About Us</a></li>
+            <li class="item services-item"><a href="#services-container">Services</a>
+                <ul class="services">
+                    <li><a href=""><i class="fas fa-chevron-right"></i>Construction</a></li>
+                    <li><a href=""><i class="fas fa-chevron-right"></i>Architecture</a></li>
+                    <li><a href=""><i class="fas fa-chevron-right"></i>Installation</a></li>
+                </ul>
+            </li>
+            <li class="item"><a href="">Testimonials</a></li>
+            <li class="item"><a href="">Contact-Us</a></li>
+        </ul> -->
     </div>
 </header>

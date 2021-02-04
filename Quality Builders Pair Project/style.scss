@@ -1,4 +1,5 @@
-
+//Import Variables and Styles
+@import 'variables','services','welcome','testimonialsHomepage','const-style';
 
 
 body {
@@ -142,6 +143,9 @@ body {
             .sidebar-button {
                 display: none;
             }
+        }
+        .sidebar {
+            display: none;
         }
     }
 
@@ -523,7 +527,6 @@ body {
 }
 
 
+// Import Media Queries
+@import '_mediaQueries';
 
-
-//Import Variables and Styles
-@import 'variables','services','welcome','testimonialsHomepage','const-style','mediaQueries';

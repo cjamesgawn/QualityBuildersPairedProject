@@ -34,4 +34,30 @@ $('document').ready(function(){
         $("#footer").load("footer.html"); 
     });
 
+
 });
+
+function openNav() {
+    document.getElementById("mySidebar").style.width = "200px";
+    document.getElementById("main").style.marginRight = "200px";
+    document.getElementById("main").style.transition = ".3s";
+}
+
+function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginRight = "0";
+}
+
+// $('#main').addEventListener("click", function () {
+    
+// });
+
+
+
+// $(document).click(function(event) { 
+//     var $target = $(event.target);
+//     if(!$target.closest('#mySidebar').length && 
+//     $('#mySidebar').is(":visible")) {
+//       $('#mySidebar').hide();
+//     }        
+// });
