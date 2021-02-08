@@ -39,7 +39,7 @@
             .image-wrapper {
                 width: 50%;
                 img {
-                    width:600px;
+                    width:100%;
                     margin-left: auto;
                 }
             }
@@ -63,6 +63,7 @@
             .partner-slides {
 
                 position:relative;
+                width: 100%;
 
             .slick-arrow {
 
@@ -133,6 +134,7 @@
                     height: 170px;
                     img {
                     max-height: 150px;
+                    max-width: 300px;
                     margin: 0 auto;
                     filter: grayscale(100%);
                     transition: all 0.5s;
