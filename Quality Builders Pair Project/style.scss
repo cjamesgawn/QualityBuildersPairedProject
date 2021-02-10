@@ -391,6 +391,9 @@ body {
                             text-decoration: none;
                             color: $black;
                             font-size: 18px;
+                            &:hover {
+                                text-decoration: underline;
+                            }
                         }
                     }
                 }
@@ -412,6 +415,9 @@ body {
                                 color: $black;
                                 font-weight: 500;
                                 font-size: 18px;
+                                &:hover {
+                                    text-decoration: underline;
+                                }
                             }
                         }
                     }
@@ -430,6 +436,14 @@ body {
                             line-height: 30px;
                             text-decoration: none;
                             color: $black;
+                            transition: all .5s;
+                            &:hover {
+                                transform: scale(1.2,1.2);
+                                transition: all .5s;
+                                i {
+                                    
+                                }
+                            }
                             i {
                                 color: #fff;
                             }
@@ -451,12 +465,15 @@ body {
                         .twitter {
                             i {
                                 font-size: 25px;
+                                padding: 6px 0 5px;
+                                padding-right: 10px;
                             }
                         }
                         .googlePlus {
                             i {
                                 font-size: 30px!important;
-                                padding-right: 10px;
+                                padding: 4px 0;
+                                padding-right: 12px;
                             }
                         }
                     }
@@ -501,6 +518,12 @@ body {
                             width: 75px;
                             font-size: 18px;
                             font-weight: 400;
+                            transition: all .5s;
+                            &:hover {
+                                transform: scale(1.01,1.01);
+                                transition: all .5s;
+                                color: orange;
+                            }
                         }
                     }
                 }

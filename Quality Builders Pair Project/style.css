@@ -1064,6 +1064,10 @@ body footer .footerContent .container .Contact-Us p a {
   font-size: 18px;
 }
 
+body footer .footerContent .container .Contact-Us p a:hover {
+  text-decoration: underline;
+}
+
 body footer .footerContent .container .Sections ul {
   padding: 0;
 }
@@ -1084,6 +1088,10 @@ body footer .footerContent .container .Sections ul li a {
   color: #101721;
   font-weight: 500;
   font-size: 18px;
+}
+
+body footer .footerContent .container .Sections ul li a:hover {
+  text-decoration: underline;
 }
 
 body footer .footerContent .container .Follow-Us {
@@ -1108,6 +1116,15 @@ body footer .footerContent .container .Follow-Us .socials a {
   line-height: 30px;
   text-decoration: none;
   color: #101721;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+body footer .footerContent .container .Follow-Us .socials a:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 body footer .footerContent .container .Follow-Us .socials a i {
@@ -1128,11 +1145,14 @@ body footer .footerContent .container .Follow-Us .socials .linkedIn i {
 
 body footer .footerContent .container .Follow-Us .socials .twitter i {
   font-size: 25px;
+  padding: 6px 0 5px;
+  padding-right: 10px;
 }
 
 body footer .footerContent .container .Follow-Us .socials .googlePlus i {
   font-size: 30px !important;
-  padding-right: 10px;
+  padding: 4px 0;
+  padding-right: 12px;
 }
 
 body footer .footerContent .container .Follow-Us .headerTwo {
@@ -1193,6 +1213,16 @@ body footer .footerContent .container .Follow-Us .mailListForm .mailListSubmit {
   width: 75px;
   font-size: 18px;
   font-weight: 400;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+body footer .footerContent .container .Follow-Us .mailListForm .mailListSubmit:hover {
+  -webkit-transform: scale(1.01, 1.01);
+          transform: scale(1.01, 1.01);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  color: orange;
 }
 
 body footer .copyright {
