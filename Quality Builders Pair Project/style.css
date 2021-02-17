@@ -621,6 +621,90 @@ body .main-content .content .eval a:hover {
           transition-duration: 0.1s;
 }
 
+.page-title {
+  background-color: #f2a100;
+  text-align: center;
+}
+
+.page-title .text-wrapper {
+  width: 50%;
+  margin: 0 auto;
+  color: white;
+  padding: 40px 0;
+}
+
+.page-title .text-wrapper h1 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.page-title .text-wrapper p {
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: .6px;
+}
+
+.image-wrapper {
+  background-image: url(assets/aboutusbackground.jpeg);
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.portfolio-section {
+  padding-bottom: 30px;
+}
+
+.portfolio-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.portfolio-section .container h1 {
+  margin-left: 20px;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.portfolio-section .container h1::after {
+  content: '';
+  display: block;
+  width: 10%;
+  border: black solid .1px;
+  margin-top: 10px;
+}
+
+.portfolio-section .container .portfolio-wrapper {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.portfolio-section .container .portfolio-wrapper img {
+  width: 30%;
+  margin: 20px auto;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.portfolio-section .container .portfolio-wrapper img:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
 body {
   margin: 0;
 }
@@ -1847,6 +1931,29 @@ body footer .copyright .container p {
   }
   .services-container .container .services-wrapper .service p {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 800px) {
+  .page-title .text-wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio-section
+.container
+.portfolio-wrapper
+img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 320px) {
+  .page-title
+.text-wrapper
+h1 {
+    font-size: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */
