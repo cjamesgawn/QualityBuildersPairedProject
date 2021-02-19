@@ -1,0 +1,40 @@
+@import 'variables';
+
+@media (max-width:800px) {
+    .privacy-content
+    .container
+    p,
+    .privacy-content
+    .container
+    li {
+        width: 90%;
+    }
+}
+
+@media (max-width:600px) {
+    .privacy-content
+    .container
+    h3 {
+        width: 80%;
+    }
+}
+
+
+@media (max-width:480px) {
+   .privacy-content
+   .container
+   .content-section {
+       padding-left: 0;
+       ul {
+           padding-left: 30px;
+       }
+   } 
+   .privacy-content
+    .container
+    p,
+    .privacy-content
+    .container
+    li {
+        width: 100%;
+    }
+}
