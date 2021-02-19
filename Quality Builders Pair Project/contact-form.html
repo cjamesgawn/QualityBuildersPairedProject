@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src ="js/app.js"></script>
+    <title>Contact Form | QualityBuilders</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/26a1f25226.js" crossorigin="anonymous"></script>
+
+    <!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../Assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Assets/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Leaflet Stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+
+    <!-- Leaflet Javascript -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin="">
+    </script>
+</head>
+
+
+
+<body>
+<div id="header"></div>
+<div class ="colourbox-1"></div>
+<div class="contact-section">
+
+    <div class="contact"> 
+    
+        <h1> Contact Us</h1>
+        <div class ="content-left">
+            <div class="content">
+                <form class ="form">
+                        <select class ="honor">
+                            <option>.Mr</option>
+                            <option>.Mrs</option>
+                            <option>.Miss</option>
+                            <option>.Ms</option>
+                            <option>.Dr</option>
+                            <option>.Sir</option>
+                        </select>
+                    <div class ="name" >
+                        <div class="first-name-group"> 
+                            <label for="f-name"> First Name: <small>*</small></label>
+                            <input type="text" id="f-name" name="f-name" placeholder="First Name...">
+                        </div>
+                        <div class="last-name-group"> 
+                            <label for="l-name"> Last Name: <small>*</small></label>
+                            <input type="text" id="l-name" name="l-name" placeholder="Last Name...">
+                        </div>
+                    </div>
+    
+                    <div class ="email-group"> 
+                        <label for="email">Your Email: <small>*</small></label>
+                        <input type="email" id="email" name="email" placeholder="Name@email.com...">
+                    </div>
+    
+                    <div class ="tel-group">
+                        <label for="tel"> Telephone: <small>*</small></label>
+                        <input type="number" id="tel" name="tel" placeholder="01234 567890">
+                    </div>
+    
+                    <div class ="msg-group">
+                        <label for="msg">Message:</label>
+                        <span class="textarea" role="textbox" contenteditable></span></p>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+        <div class ="content-right"> 
+            <div id="mapid"></div><!-- Map -->
+            <div class="cap"> reCapatcha goes here</div>
+        </div>
+    
+        <!-- GDPR Tickbox -->
+        <div class ="check"> 
+            <input type="checkbox" id="check" name="check">
+                <p>
+                    Please tick this box if you agree to our <a href="privacy.html">Privacy Policy</a> on how we use your data.
+                </p>            
+        </div>
+        <input  type="submit" id= "submit" name="submit">
+    </div>
+    
+        <script>
+            var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+    
+            L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            maxZoom: 18,
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1,
+            accessToken: 'your.mapbox.access.token'
+            }).addTo(mymap);
+        </script>
+    
+        <!-- <input type="submit" id="sub" name="sub"> -->
+
+</div>
+    
+    <!-- <div class ="colourbox-2"></div> -->
+    <div id="footer"></div>
+</body>
+
+
+
+</html>
