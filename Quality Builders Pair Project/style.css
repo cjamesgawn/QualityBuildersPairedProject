@@ -381,6 +381,11 @@
   position: relative;
 }
 
+.testimonial-container .container .carousel-wrapper .testimonial-slide .slide .quote-top {
+  height: 30px;
+  width: 43px;
+}
+
 .testimonial-container .container .carousel-wrapper .testimonial-slide .slide p {
   font-size: 25px;
   font-weight: 300;
@@ -738,6 +743,42 @@ h1 {
           transform: scale(1.2, 1.2);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+}
+
+.testimonials .testimonial-container .container .testimonial-wrapper .testimonial {
+  margin: 30px 0;
+  padding: 40px 20px 60px;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.testimonials .testimonial-container .container .testimonial-wrapper .testimonial .quote-top {
+  height: 30px;
+  width: 43px;
+}
+
+.testimonials .testimonial-container .container .testimonial-wrapper .testimonial p {
+  font-size: 25px;
+  font-weight: 300;
+  letter-spacing: .8px;
+}
+
+.testimonials .testimonial-container .container .testimonial-wrapper .testimonial .author {
+  width: 50%;
+  margin: 0;
+  float: left;
+}
+
+.testimonials .testimonial-container .container .testimonial-wrapper .testimonial .quote-container {
+  width: 50%;
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.testimonials .testimonial-container .container .testimonial-wrapper .testimonial .quote-container .quote-bottom {
+  margin-left: auto;
 }
 
 body {
@@ -1989,6 +2030,46 @@ img {
 .text-wrapper
 h1 {
     font-size: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials
+.testimonial-container
+.container
+.testimonial-wrapper
+.testimonial {
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonials
+.testimonial-container
+.container
+.testimonial-wrapper
+.testimonial {
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 375px) {
+  .testimonials
+.testimonial-container
+.container
+.testimonial-wrapper
+.testimonial {
+    padding-bottom: 130px;
+  }
+}
+
+@media (max-width: 360px) {
+  .testimonials
+.testimonial-container
+.container
+.testimonial-wrapper
+.testimonial {
+    padding-bottom: 140px;
   }
 }
 /*# sourceMappingURL=style.css.map */

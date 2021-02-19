@@ -1,0 +1,37 @@
+.testimonials {
+    .testimonial-container {
+        .container {
+            .testimonial-wrapper {
+                .testimonial {
+                    margin:30px 0;
+                    padding: 40px 20px 60px;
+                    -moz-box-shadow:     0 0 10px #ccc;
+                    -webkit-box-shadow:  0 0 10px #ccc;
+                    box-shadow:          0 0 10px #ccc;
+                    .quote-top {
+                        height: 30px;
+                        width: 43px;
+                    }
+                    p {
+                        font-size: 25px;
+                        font-weight: 300;
+                        letter-spacing: .8px;
+                    }
+                    .author {
+                        width: 50%;
+                        margin: 0;
+                        float: left;
+                    }
+                    .quote-container {
+                        width: 50%;
+                        float: left;
+                        display: flex;
+                        .quote-bottom {
+                            margin-left: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
