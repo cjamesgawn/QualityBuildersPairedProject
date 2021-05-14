@@ -695,7 +695,7 @@ h1 {
 }
 
 .background-image-wrapper {
-  background-image: url(assets/aboutusbackground.jpeg);
+  background-image: url(Assets/aboutusbackground.jpeg);
   height: 400px;
   background-attachment: fixed;
   background-position: center;
