@@ -1,1 +1,1 @@
-This is a join project submission for a hypothetical client 'Quality Builders'
+This is a joint project submission for a hypothetical client 'Quality Builders'
